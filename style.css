@@ -1,0 +1,270 @@
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+:root {
+    --dk-violet: hsl(268, 75%, 9%);
+    --lt-violet: hsl(268, 47%, 21%);
+    --lt-violet2: hsl(281, 89%, 26%);
+    --vb-violet: hsl(285, 91%, 52%);
+    --vb-violet2: hsl(290, 70%, 36%);
+    --vb-cyan2: hsl(177, 92%, 70%);
+    --dk-text: hsl(198, 20%, 13%);
+    --vb-yellow: hsl(52, 100%, 62%);
+    --pl-white: hsl(0, 0%, 100%);
+}
+
+body {
+    width: 90vw;
+    height: 94vh;
+    /* margin-top: 10px;
+    padding-top: 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(2, 17, 37);
+    /* background: linear-gradient(90deg, rgba(103,124,111,1) 13%, rgba(63,124,112,1) 25%, rgba(72,93,144,1) 50%, rgba(74,78,145,1) 73%, rgba(27,61,64,0.9809173669467787) 92%); */
+}
+
+#container{
+  width: 80vh;
+  height: 80em;
+  max-width: 450px;
+}
+
+
+h1 {
+    color: rgb(200, 199, 199);
+    text-shadow: 3px 3px 2px rgb(23, 48, 86) ;
+    opacity: 1.66;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.Password-copybtn{
+    position: relative;
+    background-color: rgb(30, 35, 51);
+    /* background: linear-gradient(90deg, rgba(54,96,95,1) 15%, rgba(64,64,148,1) 43%, rgba(19,17,60,1) 68%, rgba(7,47,55,1) 97%); */
+    border-radius: 1rem;
+    border-bottom: 0.33rem solid rgb(248, 190, 248);
+    margin: 0.75rem 0;
+    padding-top: 0.30rem;
+}
+
+.display-password-msg{
+    background-color: transparent;
+    padding: 1.1rem 1rem;
+    color:  rgb(231, 227, 232);
+    font-weight: 570px;
+    font-size: 1.2rem;
+    line-height: 19px;
+    letter-spacing: 1px;
+    padding-right: 11.5rem;
+    border:none;
+}
+
+
+.display-password-msg::placeholder {
+    position:absolute;
+    top: 45%;
+    left: 1.2rem;
+    font-size: 1.2rem;
+    line-height:27px;
+    color:rgb(184, 184, 29);
+    opacity: 0.65;
+    text-transform: uppercase;
+    transform: translateY(-50%);
+}
+
+
+.Password-copybtn button{
+
+    position:absolute;
+    top:50%;
+    right:1.2rem;
+    transform: translateY(-50%);
+}
+
+
+.input-container{
+  background-color: black;
+    /* background: linear-gradient(90deg, rgba(77,170,172,1) 13%, rgba(81,153,139,1) 25%, rgba(65,156,131,1) 50%, rgba(74,145,136,1) 73%, rgba(30,145,154,0.9809173669467787) 92%); */
+    box-shadow: 3px 3px 3px rgb(222, 219, 219);
+    border-radius: 1rem;
+    padding: 0.75rem;
+    border-bottom: 0.35rem solid beige;
+}
+
+.password-length-number{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.password-length-number p:nth-child(1){
+    color: white;
+    font-size: 1.2rem;
+    
+}
+.password-length-number p:nth-child(2){
+    color: yellow;
+    font-size: 1.2rem;
+}
+
+
+.strength-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.70rem;
+    margin-bottom: 2rem;
+}
+
+.strength-container p{
+    color: rgb(231, 231, 232);
+    font-size: 1.5rem;
+}
+
+
+.display-indicator{
+    width:1.2rem;
+    height:1.2rem;
+    border-radius:50%;
+}
+
+.generateBtn {
+    width: 100%;
+    padding: 1rem 0;
+    background-color: var(--vb-violet);
+    text-align: center;
+    border-radius: 0.75rem;
+    border-bottom: 0.35rem solid var(--vb-yellow);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--vb-yellow);
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+
+  .check {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    gap: 0 1rem;
+}
+
+.check input{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(29, 57, 70);
+    cursor: pointer;
+    position: relative;
+    border-radius: 0.35rem;
+}
+
+.check input:checked{
+    background-color: rgb(218, 218, 218);
+}
+.check input:checked::before {
+    content: '✔';
+    position: absolute;
+   /* color: black; */
+    font: size 1.08em;
+    font-weight: 600;
+    left:50%;
+    top:-4.9px;
+    transform: translateX(-50%) translateY(40%);
+}
+
+.check label {
+    color: white;
+    font-size: 1.25rem;
+    letter-spacing: 0.75px;
+}
+
+.display-copybtn{
+    background-color: transparent;
+    border:none;
+    outline:none;
+}
+
+.show-copy-mssg{
+    position: absolute;
+    background-color: var(--vb-violet2);
+    color: var(--vb-yellow);
+    font-size: 1.25rem;
+    top: -35px;
+    left: -25px;
+    padding: 5px 10px;
+    border-radius: 1rem;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: bottom;
+    transition: all 250ms ease-in-out;
+}
+  
+.show-copy-mssg.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .display-slider{
+    appearance: none;
+    width:100%;
+    height: 0.75rem;
+    cursor: pointer;
+    background-color: var(--lt-violet);
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    background-image: linear-gradient(var(--vb-violet), var(--vb-violet));
+    background-repeat: no-repeat;
+    border:none;
+    outline:none;
+    z-index:-1;
+}
+
+
+.display-slider::-webkit-slider-thumb {
+    position:relative;
+    z-index:1;
+    appearance: none;
+    height:2rem;
+    width:2rem;
+    border-radius: 50%;
+    background-color: yellow;
+    cursor:pointer;
+    margin-top: -3px;
+    box-shadow: 0px 0px 20px 0px rgba(255, 229, 61, 0.50);
+    transition: all 100ms ease-in;
+}
+
+.display-slider:focus{
+    outline: 3px solid var(--vb-yellow);
+}
+
+.display-slider::-webkit-slider-thumb:hover{
+    outline: 2px solid var(--vb-yellow);
+    background-color: var(--dk-violet);
+    box-shadow: 0px 0px 25px 5px rgba(255, 229, 61, 0.80);
+}
+
+.input-container:hover{
+    outline: 1.5px solid rgb(87, 223, 168);
+    
+}
+
+  
+  
+  
+
+  
+    
