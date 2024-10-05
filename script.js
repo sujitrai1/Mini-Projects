@@ -6,7 +6,6 @@ let passwordLength = 10;
 let checkCount = 0;
 
 //set password length
-fjlsdjflsaj
 function handleSlider(){
     displayslider.value = passwordLength;
     dataLengthNumber.innerText = passwordLength;
