@@ -1,2 +1,1 @@
-# Password Ganaretor
- Password Ganaretor
+In this project, I built a Password Generator that allows users to create secure and customizable passwords. Using JavaScript, I implemented features such as setting password length, and including or excluding characters like numbers, symbols, and uppercase letters. The user interface is clean and simple, providing an intuitive experience. This project showcases my ability to handle user input, work with dynamic content, and apply logic for real-world applications
